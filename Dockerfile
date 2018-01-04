@@ -22,9 +22,9 @@ RUN conda install \
  	matplotlib \
  	seaborn
 
-RUN conda install -c toli nolearn
 RUN conda install -c statsmodels statsmodels
 RUN conda install -c bioconda r-ggdendro 
 RUN conda install -c bioconda r-neuralnet
 
 RUN pip install scikit-neuralnetwork
+
