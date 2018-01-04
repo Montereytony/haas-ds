@@ -10,7 +10,6 @@ RUN conda install \
  	r-gridExtra \
  	r-e1071 \
  	r-GGally \
- 	r-grDevices \
  	r-rgl \
  	r-Java \
  	r-xlsxjars \
