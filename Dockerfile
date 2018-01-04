@@ -15,8 +15,6 @@ RUN conda install \
  	r-xlsx \
  	r-rJava \
  	r-pracma \
- 	r-XLConnect \
- 	XLConnect \
  	ipython \
  	IPython.display \
  	numpy \
