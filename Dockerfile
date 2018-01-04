@@ -24,7 +24,6 @@ RUN conda install \
 
 RUN conda install -c statsmodels statsmodels
 RUN conda install -c bioconda r-ggdendro 
-RUN conda install -c bioconda r-neuralnet
 
 RUN pip install scikit-neuralnetwork
 
