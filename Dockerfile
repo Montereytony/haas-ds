@@ -11,7 +11,6 @@ RUN conda install \
  	r-e1071 \
  	r-GGally \
  	r-rgl \
- 	r-Java \
  	r-xlsxjars \
  	r-xlsx \
  	r-rJava \
