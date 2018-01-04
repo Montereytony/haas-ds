@@ -24,3 +24,5 @@ conda install matplotlib
 conda install seaborn
 conda install statsmodels.formula.api
 conda install -c statsmodels statsmodels
+conda install -c bioconda r-ggdendro 
+conda install -c bioconda r-neuralnet
