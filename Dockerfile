@@ -16,13 +16,11 @@ RUN conda install \
  	r-rJava \
  	r-pracma \
  	ipython \
- 	IPython.display \
  	numpy \
  	pandas \
  	plotnine \
  	matplotlib \
- 	seaborn \
- 	statsmodels.formula.api
+ 	seaborn
 
 RUN conda install -c toli nolearn
 RUN conda install -c statsmodels statsmodels
