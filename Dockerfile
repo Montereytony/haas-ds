@@ -1,3 +1,8 @@
+# to do a test build by hand (instead of the automated hub.docker.com build) you
+# can do this:
+#
+#    docker build --rm --tag ds-test .
+
 FROM jupyter/datascience-notebook
 
 RUN conda install \
