@@ -5,6 +5,20 @@
 
 FROM jupyter/datascience-notebook
 
+USER root
+
+RUN ln -s /bin/tar /bin/gtar
+RUN apt-get install unzip
+RUN wget https://github.com/jgm/pandoc/releases/download/2.1/pandoc-2.1-1-amd64.deb
+RUN dpkg -i pandoc-2.1-1-amd64.deb
+RUN rm pandoc-2.1-1-amd64.deb 
+
+USER jovyan
+
+
+RUN Rscript -e "install.packages('wordcloud2')"
+
+
 RUN conda install \
  	r-mclust \
  	r-gridExtra \
@@ -20,7 +34,8 @@ RUN conda install \
  	pandas \
  	plotnine \
  	matplotlib \
- 	seaborn
+ 	seaborn \
+    r-aer 
 
 RUN conda install -c https://conda.anaconda.org/amueller wordcloud
 RUN conda install -c statsmodels statsmodels
@@ -28,6 +43,4 @@ RUN conda install -c bioconda r-ggdendro
 
 
 RUN pip install scikit-neuralnetwork
-
-RUN alias gtar=tar && Rscript -e "devtools::install_github(c('lchiffon/wordcloud2'))"
 
