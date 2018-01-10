@@ -22,8 +22,12 @@ RUN conda install \
  	matplotlib \
  	seaborn
 
+RUN conda install -c https://conda.anaconda.org/amueller wordcloud
 RUN conda install -c statsmodels statsmodels
 RUN conda install -c bioconda r-ggdendro 
 
+
 RUN pip install scikit-neuralnetwork
+
+RUN ln -s /bin/tar /bin/gtar && Rscript -e "devtools::install_github(c('lchiffon/wordcloud2'))"
 
