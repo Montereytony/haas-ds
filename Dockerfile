@@ -29,5 +29,5 @@ RUN conda install -c bioconda r-ggdendro
 
 RUN pip install scikit-neuralnetwork
 
-RUN alias tar=gtar && Rscript -e "devtools::install_github(c('lchiffon/wordcloud2'))"
+RUN alias gtar=tar && Rscript -e "devtools::install_github(c('lchiffon/wordcloud2'))"
 
