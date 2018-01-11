@@ -17,7 +17,6 @@ RUN rm pandoc-2.1-1-amd64.deb
 
 USER jovyan
 
-#RUN Rscript -e "install.packages("htmlwidgets")"
 RUN Rscript -e "install.packages('https://cran.r-project.org/src/contrib/htmlwidgets_0.9.tar.gz',repos=NULL)"
 RUN Rscript -e "install.packages('https://ftp.osuosl.org/pub/cran/src/contrib/wordcloud2_0.2.1.tar.gz',repos=NULL)"
 
