@@ -8,9 +8,9 @@ FROM jupyter/datascience-notebook
 USER root
 
 RUN ln -s /bin/tar /bin/gtar
-RUN apt-get install unzip
-RUN wget https://github.com/jgm/pandoc/releases/download/2.1/pandoc-2.1-1-amd64.deb
-RUN dpkg -i pandoc-2.1-1-amd64.deb
+RUN /usr/bin/apt-get install unzip
+RUN /usr/bin/wget https://github.com/jgm/pandoc/releases/download/2.1/pandoc-2.1-1-amd64.deb
+RUN /usr/bin/dpkg -i pandoc-2.1-1-amd64.deb
 RUN rm pandoc-2.1-1-amd64.deb 
 
 
