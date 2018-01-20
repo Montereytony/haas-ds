@@ -46,3 +46,4 @@ RUN conda install -c bioconda r-ggdendro
 
 RUN pip install scikit-neuralnetwork
 
+RUN pip install jupyter_contrib_nbextensions
