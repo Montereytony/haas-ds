@@ -48,7 +48,7 @@ RUN conda install \
         r-aer  \
         r-png \
         r-devtools \
-                r-digest \
+        r-digest \
         r-evaluate \
         r-memoise  \
         r-withr  \
@@ -67,15 +67,15 @@ RUN conda install \
 
 RUN conda install \
         ipython \
-    numpy \
-    pandas \
-    plotnine \
-    matplotlib \
-    seaborn \
-    phantomjs  \
-    statsmodels \
-    statsmodels \
-    python-utils
+        numpy \
+        pandas \
+        plotnine \
+        matplotlib \
+        seaborn \
+        phantomjs  \
+        statsmodels \
+        statsmodels \
+        python-utils
 
 RUN pip install scikit-neuralnetwork
 
